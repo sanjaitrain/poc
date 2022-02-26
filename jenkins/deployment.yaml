@@ -20,6 +20,13 @@ spec:
       containers:
         - name: jenkins
           image: jenkins/jenkins:lts-jdk11
+          resources:
+            requests:
+            memory: "2048Mi"
+            cpu: "2000m"
+            limits:
+            memory: "2048Mi"
+            cpu: "1900m"
           ports:
             - containerPort: 8080
           volumeMounts:
