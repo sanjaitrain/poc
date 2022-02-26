@@ -3,13 +3,6 @@ Created a NS : POC
 sass273491@ROL00120:~/poc/poc/jenkins$ k get namespace | grep -i poc
 poc                    Active   16m
 
-Pull helm charts
-------------------
-
-$ helm repo add jenkinsci https://charts.jenkins.io
-$ helm repo update
-$ helm search repo jenkinsci
-
 Storage
 -------
 
@@ -43,6 +36,10 @@ A RoleBinding may reference any Role in the same namespace. Alternatively, a Rol
 
 ---
 
+sanjai
+sanju@89
+
+http://192.168.59.101:31313/
 
 
 
