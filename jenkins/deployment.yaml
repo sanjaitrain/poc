@@ -1,9 +1,10 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: jenkins
   namespace: poc
 spec:
+  serviceName: jenkins
   replicas: 2
   selector:
     matchLabels:
